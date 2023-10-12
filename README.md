@@ -28,7 +28,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Actions and Observations</h2>
 
 <p>
-<p align="center"> <img src="https://imgur.com/aI6ktaj.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<p align="center"> <img src="https://imgur.com/aI6ktaj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Welcome to Microsoft Azure! After creating a free account, create a new resource group. Then create 2 virtual machines, 1 with Windows 10 (22h2) and 1 with Ubuntu. Make sure they're in the same resource group. Use network watcher to ensure connection, if necessary. 
@@ -36,15 +36,15 @@ Welcome to Microsoft Azure! After creating a free account, create a new resource
 <br />
 
 <p>
-<p align="center"><img src="https://imgur.com/ngrOqlq.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> <p align="center"><img src="https://imgur.com/FDlKKKr.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<p align="center"><img src="https://imgur.com/ngrOqlq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> <p align="center"><img src="https://imgur.com/FDlKKKr.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-(ICMP) After connecting to Virtual Machine 1, go into any browser and search for Wireshark. Download the appropiate version. After accessing Wireshark, filter for ICMP traffic and plug in the Private IP address of Virtual Machine 2 (PIC 1). Observe traffic. Go back to Powershell and engage a nonstop ping (PIC 2).
+(ICMP) After connecting to Virtual Machine 1, go into any browser and search for Wireshark. Download the appropiate version. After accessing Wireshark, filter for ICMP traffic and plug in the Private IP address of Virtual Machine 2 (PIC 1). Observe traffic. Go back to Powershell and engage a nonstop ping, which is "ping (Receiving IP) -t" (PIC 2). 
 </p>
 <br />
 
 <p>
-<p align="center"><img src="https://imgur.com/QaIM6qE.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<p align="center"><img src="https://imgur.com/QaIM6qE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 (SSH) In Wireshark, filter for SSH traffic. In powershell, "SSH Into" the Virtual Machine 2 Private IP address. When prompted, log in with credentials and observe SSh traffic in Wireshark. Type "exit" and press enter in Powershell to leave. 
@@ -52,7 +52,7 @@ Welcome to Microsoft Azure! After creating a free account, create a new resource
 <br />
 
 <p>
-<p align="center"><img src="https://imgur.com/KSlbHYX.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<p align="center"><img src="https://imgur.com/KSlbHYX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 
@@ -61,7 +61,7 @@ Welcome to Microsoft Azure! After creating a free account, create a new resource
 <br />
 
 <p>
-<p align="center"><img src="https://imgur.com/nQ4DfpI.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
+<p align="center"><img src="https://imgur.com/nQ4DfpI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 
@@ -70,11 +70,14 @@ Welcome to Microsoft Azure! After creating a free account, create a new resource
 <br />
 
 <p>
-<p align="center"><img src="https://imgur.com/BGudZSy.png" height="70%" width="70%" alt="Disk Sanitization Steps"/> 
+<p align="center"><img src="https://imgur.com/BGudZSy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 
-(RDP) Remember that RDP is recognized as tcp.port == 3389 in Wireshark. Filter for RDP and observe the constant flow of traffic. This is the constant noise between both your computer and the Virtual Machine. It's always active in the background to ensure connection. This is the end of this experiment, please do not forget to delete this resource group and practice when you can!
+(RDP) Remember that RDP is recognized as tcp.port == 3389 in Wireshark. Filter for RDP and observe the constant flow of traffic. This is the constant noise between both your computer and the Virtual Machine. It's always active in the background to ensure connection. 
+
+<p Align="center"> </p>
+**This is the end of this tutorial, please do not forget to delete the created resource group and practice when you can! **
 </p>
 <br />
 
