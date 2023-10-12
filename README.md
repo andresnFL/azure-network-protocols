@@ -56,7 +56,7 @@ Welcome to Microsoft Azure! After creating a free account, create a new resource
 </p>
 <p>
 
-(DHCP) Filter for DHCP traffic in Wireshark. Use IPConfig /renew issue a new IP address. Observe traffic.
+(DHCP) Filter for DHCP traffic in Wireshark. Use "IPConfig /renew" to issue a new IP address. Observe traffic.
 </p>
 <br />
 
